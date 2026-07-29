@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md. Ashiq Bin Hamid • Network & Computer Engineer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Personal portfolio of Md. Ashiq Bin Hamid, a Network & Computer Engineering student at American International University - Bangladesh (AIUB) showcasing projects in networking, scripting, and system design." />
+  <meta name="keywords"
+    content="Md. Ashiq Bin Hamid, Ashiq-D, Network Engineer, Computer Engineer, AIUB, Portfolio, Cisco, Python, GNS3" />
+  <meta name="author" content="Md. Ashiq Bin Hamid" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md. Ashiq Bin Hamid • Portfolio" />
+  <meta property="og:description"
+    content="Explore my projects in network automation, routing, systems development, and computer engineering." />
+  <meta property="og:image" content="https://github.com/Ashiq-D.png" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- Floating Navigation Header -->
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a class="brand" href="#" aria-label="Md. Ashiq Bin Hamid Home">
+        <img class="brand-img" src="https://github.com/Ashiq-D.png" alt="Md. Ashiq Bin Hamid Profile" />
+        <span>Ashiq Bin Hamid</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation" id="nav-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#intro">Intro Video</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a class="btn btn-secondary btn-small" href="https://github.com/Ashiq-D" target="_blank" rel="noopener"
+          id="github-nav-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a class="btn btn-primary btn-small" href="assets/Ashiq_Bin_Hamid_CV.pdf" download id="cv-download-btn">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" id="menu-toggle">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Interactive Particle Canvas -->
+      <canvas id="network-canvas"></canvas>
+
+      <div class="container hero-inner">
+        <div class="hero-text reveal active">
+          <h1>Hi, I'm <span>Ashiq Bin Hamid</span></h1>
+          <div class="subtitle" id="tagline-container">
+            <span class="typewriter-text"
+              data-words='["Network Engineer", "Infrastructure Specialist", "Tech Enthusiast"]'>Network
+              Engineer</span>
+          </div>
+          <p class="hero-description">
+            Specializing in network design, infrastructure scaling, automation scripting, and systems configuration.
+            Passionate about routing and switching protocols, hardware architecture, and creating reliable,
+            high-performance networks.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <i class="fas fa-leaf"></i> View Projects
+            </a>
+            <a class="btn btn-secondary" href="#skills">
+              <i class="fas fa-network-wired"></i> Core Skills
+            </a>
+          </div>
+          <div class="social-links" id="hero-socials">
+            <a href="https://github.com/Ashiq-D" target="_blank" rel="noopener" title="GitHub Profile">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ashiq-bin-hamid-1850a02b0/" target="_blank" rel="noopener"
+              title="LinkedIn Profile">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:ashiqbinhamid@gmail.com" title="Send Email">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrapper reveal active">
+          <!-- Ambient glow behind the cutout -->
+          <div class="avatar-ambient-glow"></div>
+          <img class="hero-avatar" id="profile-avatar" src="assets/images/hero-photo.png"
+            alt="Md. Ashiq Bin Hamid Portrait Photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Introduction Section -->
+    <section id="intro" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-circle-play"></i> Introduction Video</h2>
+          <p class="lead">Watch my video introduction where I walk through my technical interests, projects, and career
+            aspirations.</p>
+        </div>
+        <div class="video-wrapper reveal">
+          <!-- Placeholder frame - User can replace the YouTube source with their own video link -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Md. Ashiq Bin Hamid - Video Introduction"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-seedling"></i> About Me</h2>
+          <p class="lead">Combining computer engineering concepts with practical network architectures to build robust
+            communication frameworks.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content reveal stagger-1">
+            <h3>Who I Am</h3>
+            <p>
+              I am a dedicated student at American International University - Bangladesh (AIUB), majoring in
+              Computer Science & Engineering with a strong specialization in Computer & Network Engineering.
+            </p>
+            <p>
+              Ever since I started learning about computer networks, I’ve been fascinated by how devices communicate and
+              how large-scale infrastructures keep businesses connected. This curiosity led me to focus on networking,
+              where I enjoy designing networks, configuring routing and switching solutions, troubleshooting issues, and
+              exploring network security.
+            </p>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>CSE Student at AIUB</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ashiqbinhamid@gmail.com">ashiqbinhamid@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-cards reveal stagger-2">
+            <div class="card">
+              <div class="card-title">
+                <i class="fas fa-bullseye"></i> Focus Areas
+              </div>
+              <ul class="highlights-list">
+                <li>Building reliable and scalable network infrastructures.</li>
+                <li>Solving real-world networking and connectivity challenges.</li>
+                <li>Exploring network security and traffic analysis.</li>
+                <li>Automating repetitive network tasks with Python.</li>
+                <li>Working with Linux and enterprise networking tools.</li>
+                <li>Continuous learning through hands-on lab environments.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-code"></i> Expertise</h2>
+          <p class="lead">Proficiency in network architectures, computer systems, and programming languages.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Routing -->
+          <div class="skill-card-hex card-color-blue reveal stagger-1">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+            </div>
+            <h3>ROUTING</h3>
+            <p>Configured, managed and replaced around 42 Cisco WAN Routers, with IKEv2 VPN Tunnels.</p>
+          </div>
+
+          <!-- Card 2: Switching -->
+          <div class="skill-card-hex card-color-red reveal stagger-2">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
+            <h3>SWITCHING</h3>
+            <p>Including most Switching technologies, such as Spanning-tree, vPC, VXLAN etc.</p>
+          </div>
+
+          <!-- Card 3: Information Security -->
+          <div class="skill-card-hex card-color-yellow reveal stagger-3">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+            <h3>INFORMATION SECURITY</h3>
+            <p>Firewalling, Mail Security, Web Security, E-Mail Encryption, RSA, VPN, AAA and SSL-Certificates.</p>
+          </div>
+
+          <!-- Card 4: Windows & Linux -->
+          <div class="skill-card-hex card-color-purple reveal stagger-1">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-layer-group"></i>
+              </div>
+            </div>
+            <h3>WINDOWS & LINUX</h3>
+            <p>Skills in dealing with Windows Server Features such as AD, DNS, DHCP or Linux Services.</p>
+          </div>
+
+          <!-- Card 5: Load-Balancer -->
+          <div class="skill-card-hex card-color-teal reveal stagger-2">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
+            <h3>LOAD-BALANCER</h3>
+            <p>Layer 3-4 and Application Layer Load Balancing Skills, mostly with Citrix ADC (NetScaler).</p>
+          </div>
+
+          <!-- Card 6: System Administration -->
+          <div class="skill-card-hex card-color-darkblue reveal stagger-3">
+            <div class="hex-icon-container">
+              <div class="hex-shape">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+            <h3>SYSTEM ADMINISTRATION</h3>
+            <p>Administrating different types of Servers, Logging, Monitoring, Security Appliances etc.</p>
+          </div>
+        </div>
+
+        <!-- Skills Progress Subsection -->
+        <div class="skills-progress-section reveal" style="margin-top: 7rem;">
+          <div class="section-head reveal" style="margin-bottom: 4rem;">
+            <h2><i class="fas fa-chart-line"></i> Skills</h2>
+            <p class="lead">Here are my main technical skills and how much progress I have made in them.</p>
+          </div>
+
+          <div class="progress-bars-grid">
+            <!-- Row 1 -->
+            <div class="progress-item color-blue">
+              <span class="skill-name">Routing</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 90%;">
+                  <span class="skill-percentage-bubble">90%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-item color-red">
+              <span class="skill-name">Switching</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 80%;">
+                  <span class="skill-percentage-bubble">80%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="progress-item color-yellow">
+              <span class="skill-name">Firewalling</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 90%;">
+                  <span class="skill-percentage-bubble">90%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-item color-purple">
+              <span class="skill-name">Web Security - Proxy</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 90%;">
+                  <span class="skill-percentage-bubble">90%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="progress-item color-teal">
+              <span class="skill-name">Mail Security</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 90%;">
+                  <span class="skill-percentage-bubble">90%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-item color-darkblue">
+              <span class="skill-name">E-Mail Encryption</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 85%;">
+                  <span class="skill-percentage-bubble">85%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="progress-item color-blue text-dark-pct">
+              <span class="skill-name">Windows Server</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 70%;">
+                  <span class="skill-percentage-bubble">70%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-item color-blue text-dark-pct">
+              <span class="skill-name">Linux Server</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 65%;">
+                  <span class="skill-percentage-bubble">65%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="progress-item color-blue text-dark-pct">
+              <span class="skill-name">Load-Balancer</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 70%;">
+                  <span class="skill-percentage-bubble">70%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-item color-blue text-dark-pct">
+              <span class="skill-name">Virtualisation</span>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 65%;">
+                  <span class="skill-percentage-bubble">65%</span>
+                  <span class="progress-dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-award"></i> Awards & Achievements</h2>
+          <p class="lead">Recognitions of academic milestones, certifications, and technical accomplishments.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Achievement Card 1 -->
+          <div class="card reveal stagger-1" style="width: 100%;">
+            <div class="card-title">
+              <i class="fas fa-graduation-cap"></i> Academic Achievements
+            </div>
+            <ul class="highlights-list">
+              <li>Excellent academic standings in Computer and Network Engineering courses at AIUB.</li>
+              <li>Successfully implemented multiple Cisco and Python automation prototypes.</li>
+              <li>Active participant in AIUB engineering seminars and networking bootcamps.</li>
+
+            </ul>
+          </div>
+
+          <!-- Achievement Card 2 (Certifications & Labs) -->
+          <div class="card reveal stagger-2" style="width: 100%;">
+            <div class="card-title">
+              <i class="fas fa-certificate"></i> Technical Certifications
+            </div>
+            <ul class="highlights-list">
+              <li><strong>Cisco Certified Network Associate (CCNA)</strong> - <em>Preparation Coursework Completed</em>
+              </li>
+              <li><strong>CompTIA Network+</strong> - <em>Self-study and Lab Simulator completions</em></li>
+              <li>Passed advanced university laboratory evaluations on Router configurations.</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-folder-open"></i> Portfolio Projects</h2>
+          <p class="lead">Featured software and hardware routing systems designed with Java, C#, C++, and Python.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project: Techmak Technology Portal -->
+          <div class="card project-card reveal stagger-1">
+            <div class="project-header">
+              <h3>Techmak Tech Portal</h3>
+              <span class="project-stars"><i class="fab fa-react"></i> Next.js</span>
+            </div>
+            <p class="project-desc">A modern, responsive technology platform and security portal designed to showcase
+              AI-powered CCTV surveillance, Electronic Article Surveillance (EAS), and custom IoT software integrations.
+            </p>
+            <div class="project-tags">
+              <span class="tag"><span class="dot" style="background-color: #0ea5c9;"></span>Next.js</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Surveillance API</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-small" href="https://github.com/Ashiq-D/Techmak" target="_blank"
+                rel="noopener">
+                <i class="fab fa-github"></i> Repository
+              </a>
+              <a class="btn btn-primary btn-small" href="https://techmakai.com/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Live Site
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: Hospital Management System -->
+          <div class="card project-card reveal stagger-2">
+            <div class="project-header">
+              <h3>Hospital Management System</h3>
+              <span class="project-stars"><i class="fab fa-windows"></i> C# / .NET</span>
+            </div>
+            <p class="project-desc">A database-driven enterprise application designed for streamlining medical
+              workflows, patient admission, doctor appointments, billing cycles, and medical history tracking.</p>
+            <div class="project-tags">
+              <span class="tag"><span class="dot" style="background-color: #178600;"></span>C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Windows Forms</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-small" href="https://github.com/Ashiq-D/Hospital-management-system"
+                target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: Java Core Project -->
+          <div class="card project-card reveal stagger-3">
+            <div class="project-header">
+              <h3>Java Core Project</h3>
+              <span class="project-stars"><i class="fab fa-java"></i> Java</span>
+            </div>
+            <p class="project-desc">A robust desktop application showcasing OOP design principles, custom GUI structures
+              (using Swing/JavaFX), file handling, multi-threaded operations, and socket communication.</p>
+            <div class="project-tags">
+              <span class="tag"><span class="dot" style="background-color: #b07219;"></span>Java</span>
+              <span class="tag">OOP Design</span>
+              <span class="tag">Desktop App</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-small" href="https://github.com/Ashiq-D/JavaProject" target="_blank"
+                rel="noopener">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: Inventory Management System -->
+          <div class="card project-card reveal stagger-4">
+            <div class="project-header">
+              <h3>Inventory Management System</h3>
+              <span class="project-stars"><i class="fab fa-java"></i> Java / MySQL</span>
+            </div>
+            <p class="project-desc">An automated inventory control system built to manage stock levels, monitor sales
+              transactions, track suppliers, and generate warning alerts for low stock levels.</p>
+            <div class="project-tags">
+              <span class="tag"><span class="dot" style="background-color: #b07219;"></span>Java</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Inventory API</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary btn-small" href="https://github.com/Ashiq-D/Inventory-Management-System"
+                target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-graduation-cap"></i> Educational Timeline</h2>
+          <p class="lead">Academic degrees, key courses, and university background.</p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline" id="education-timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="card timeline-card">
+              <span class="timeline-meta">Undergraduate Studies</span>
+              <h3>B.Sc. in Computer Science & Engineering</h3>
+              <p><strong>Institution:</strong> American International University - Bangladesh (AIUB)</p>
+              <p><strong>Major Focus:</strong> Computer & Network Engineering</p>
+
+              <div class="timeline-details">
+                <p><strong>Core Technical Coursework:</strong></p>
+                <div class="skills-list">
+                  <span class="skill-tag">Data Communications</span>
+                  <span class="skill-tag">Computer Networks</span>
+                  <span class="skill-tag">Microprocessor and Embedded Systems</span>
+                  <span class="skill-tag">Operating Systems</span>
+                  <span class="skill-tag">Data Structures & Algorithms</span>
+                  <span class="skill-tag">Object-Oriented Programming (Java, C++)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2><i class="fas fa-envelope-open-text"></i> Connect With Me</h2>
+          <p class="lead">Interested in networking collaborations, technical projects, or internships? Let's talk!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-card reveal stagger-1">
+            <h3>Contact Information</h3>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/Ashiq-D" target="_blank" rel="noopener">github.com/Ashiq-D</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/ashiq-bin-hamid-1850a02b0/" target="_blank"
+                    rel="noopener">linkedin.com/in/ashiq-bin-hamid</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:ashiqbinhamid@gmail.com">ashiqbinhamid@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <h3>Core Engineering Topics</h3>
+            <ul class="collaboration-list">
+              <li><i class="fas fa-seedling"></i> Network automation scripts (Python/Ansible)</li>
+              <li><i class="fas fa-network-wired"></i> Enterprise LAN/WAN design and simulation</li>
+              <li><i class="fas fa-microchip"></i> System hardware integrations</li>
+            </ul>
+          </div>
+
+          <div class="card contact-card reveal stagger-2">
+            <h3>Send A Message</h3>
+            <form class="contact-form" id="msg-form">
+              <div class="form-group">
+                <label for="user-name">Your Name</label>
+                <input class="form-control" type="text" id="user-name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="user-email">Your Email</label>
+                <input class="form-control" type="email" id="user-email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="user-msg">Message</label>
+                <textarea class="form-control" id="user-msg"
+                  placeholder="Tell me about your project or network requirements..." required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" id="send-msg-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand-col">
+        <div class="footer-brand">
+          <img class="brand-img" src="https://github.com/Ashiq-D.png" alt="Md. Ashiq Bin Hamid Logo" />
+          <span>Ashiq Bin Hamid</span>
+        </div>
+        <p class="footer-text">
+          Network & Computer Engineer specializing in infrastructure design, automation, and reliable hardware networks.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Md. Ashiq Bin Hamid. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer-col footer-links-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-angles-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-angles-right"></i> About</a></li>
+          <li><a href="#skills"><i class="fas fa-angles-right"></i> Skills</a></li>
+          <li><a href="#projects"><i class="fas fa-angles-right"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-angles-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-social-col">
+        <h3>Connect</h3>
+        <p class="social-prompt">Feel free to reach out for collaborations or networking.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Ashiq-D" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ashiq-bin-hamid-1850a02b0/" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:ashiqbinhamid@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll To Top Button (Floating) -->
+  <button class="scroll-top-btn" aria-label="Scroll to top of page"
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

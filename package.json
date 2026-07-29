@@ -1,0 +1,11 @@
+{
+  "name": "nature-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Nature-Themed Personal Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000 -c-1"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
